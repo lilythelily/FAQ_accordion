@@ -60,7 +60,7 @@ margin: 0 auto;
 }
 
 .accordion-title:after {
-    content: url(/assets/images/icon-plus.svg) ;
+    content: url(img/icon-plus.svg) ;
 } 
 
 
@@ -76,7 +76,7 @@ margin: 0 auto;
 }
 
 .accordion-item.active .accordion-title:after {
-    content: url(/assets/images/icon-minus.svg);
+    content: url(img/icon-minus.svg);
 } 
 
 
