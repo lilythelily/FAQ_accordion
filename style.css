@@ -1,0 +1,112 @@
+* {
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(275, 100%, 97%);
+    font-family: 'Work Sans', sans-serif;
+}
+
+picture {
+    z-index: -1;
+}
+
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+    font-size: 40px;
+    color: hsl(292, 42%, 14%);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 0 0 16px;
+}
+
+h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: hsla(292, 42%, 14%, 0.8); 
+}
+
+.accordion {
+margin: 0 auto;
+}
+
+.accordion-item {
+    padding-bottom: 10px;
+}
+
+.accordion-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 24px 24px 0px 24px;
+    transition: 0.4s; 
+    cursor: pointer;
+}
+
+.active, .accordion-title :hover {
+    color: hsl(291, 62%, 54%);
+    cursor: pointer;
+}
+
+.accordion-title:after {
+    content: url(/assets/images/icon-plus.svg) ;
+} 
+
+
+.accordion-content {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(292, 16%, 49%);
+    padding: 16px 24px 0 24px;
+    max-height: 0;
+    transition: max-height 0.2s ease;
+    overflow: hidden;
+}
+
+.accordion-item.active .accordion-title:after {
+    content: url(/assets/images/icon-minus.svg);
+} 
+
+
+hr {
+    border: 0.3px solid hsla(292, 16%, 49%, 0.2);
+    margin: 10px 24px 0 24px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 24px 16px 24px 16px;
+    width: 520px;
+    margin: -110px auto 24px auto;
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px hsla(292, 16%, 49%, 0.4);
+
+}
+
+@media screen and (max-width: 680px) {
+    .card {
+        width: 100%;
+        min-width: 320px;
+        margin: -20px auto 24px auto;
+        position: relative;
+    }
+}
+
+.attribution {
+    margin: 100px auto 0px auto;
+    color: hsl(292, 16%, 49%);
+}
