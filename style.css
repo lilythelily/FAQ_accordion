@@ -60,7 +60,7 @@ margin: 0 auto;
 }
 
 .accordion-title:after {
-    content: url(img/icon-plus.svg) ;
+    content: url(img/icon-plus.svg);
 } 
 
 
